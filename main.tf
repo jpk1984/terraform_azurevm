@@ -1,5 +1,5 @@
 resource "azurerm_resource_group" "texzteam"{
-    name    = texzteam
+    name    = var.rg_name
     location = "us-west-2"
     
     tags = {
