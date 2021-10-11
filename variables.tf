@@ -28,7 +28,7 @@ variable "vnet_subnet_id" {
 variable    "public_ip" {
     type        = list
     description = "the public_ip"
-    default     = public_ip
+    
 }
 variable "vent_security_group"{
     type            = list
@@ -53,7 +53,7 @@ variable "os"{
 variable "admin_username" {
     type        = string
     description = "Administrator usernmae for server"
-    default     = ["root"]
+    
 }
 variable "password"{
     type        = bool
@@ -69,15 +69,15 @@ variable "vm_size" {
 variable "vm_nic" {
     type            = list
     description     = "the nic"
-    default         = vm_nic
+    
 }
 variable "virtual_machine" {
-    type        = map
+    type        = string
     description = "the virtual machine"
-    default     = Standard_DS1_v2
+    default     = "Standard_DS1_v2"
 }
 variable "computer_name" {
     type            = string
-    descritption    = "the computer_name"
-    default         = TECH
+    description     = "the server"
+    default         =  "TECH"
 }
